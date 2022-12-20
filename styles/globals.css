@@ -90,8 +90,8 @@ video {
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: Neuzeit, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 /* HTML5 display-role reset for older browsers */
 article,
@@ -141,9 +141,8 @@ table {
 }
 
 @font-face {
-  font-family: "OpenSans";
-  src: url("../asset/OpenSans/OpenSans-Light.ttf");
-  src: url("../asset/OpenSans/OpenSans-Medium.ttf");
+  font-family: "Neuzeit";
+  src: url("../assets/fonts/Neuzeit.otf");
   font-weight: 400;
   font-style: normal;
 }
