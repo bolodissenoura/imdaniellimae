@@ -136,13 +136,20 @@ table {
   }
   body {
     color: white;
-    background: black;
+    background: #100f0f;
   }
 }
 
 @font-face {
   font-family: "Neuzeit";
   src: url("../assets/fonts/Neuzeit.otf");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Bremlin";
+  src: url("../assets/fonts/bremlin.otf");
   font-weight: 400;
   font-style: normal;
 }
