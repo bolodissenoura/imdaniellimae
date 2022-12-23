@@ -9,7 +9,7 @@ export function HomeContent() {
         <Styles.TextContent>
           <Styles.Title>Daniel limae</Styles.Title>
           <Styles.Subtitle>
-            Software Developer | Front-end Developer
+            Software Developer | Front-end
           </Styles.Subtitle>
         </Styles.TextContent>
       </Styles.Container>
