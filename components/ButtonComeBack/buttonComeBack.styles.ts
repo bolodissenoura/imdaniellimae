@@ -34,7 +34,8 @@ export const Button = styled.button`
   will-change: box-shadow, transform;
   font-size: 18px;
   cursor: pointer;
-  margin: 0 8px;
+  border-radius: 50%;
+  margin-top: 16px;
 
   a {
     text-decoration: none;
