@@ -13,7 +13,7 @@ export function LinkButton() {
           <Link href="/">Work XP</Link>
         </Styles.Button>
         <Styles.Button>
-          <Link href="/">Projects</Link>
+          <Link href="/projects">Projects</Link>
         </Styles.Button>
         <Styles.Button>
           <Link href="/">Contact</Link>
