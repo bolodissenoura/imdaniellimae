@@ -1,6 +1,6 @@
-import Image from "next/image";
 import React from "react";
 import * as Styles from "./homeContent.styles";
+import * as Component from "../index";
 
 export function HomeContent() {
   return (
@@ -13,7 +13,8 @@ export function HomeContent() {
         </div>
         <Styles.TextContent>
           <Styles.Title>Daniel limae</Styles.Title>
-          <Styles.Subtitle>software developer | front-end</Styles.Subtitle>
+          <Styles.Subtitle>software developer | front-end | web and mobile | 🦕</Styles.Subtitle>
+          <Component.LinkButton />
         </Styles.TextContent>
       </Styles.Container>
     </>
