@@ -12,21 +12,21 @@ export const Container = styled.div`
     top: 50%;
     left: 50%;
     background-color: #5800ff;
-    animation: animation-3 3s infinite;
+    animation: animation-3 8s infinite;
   }
 
   .sBall {
     top: 80%;
     left: 70%;
     background-color: #2192ff;
-    animation: animation-3 3s infinite;
+    animation: animation-3 8s infinite;
   }
 
   .tBall {
     top: 10%;
     left: 30%;
     background-color: #e900ff;
-    animation: animation-3 3s infinite;
+    animation: animation-3 8s infinite;
   }
 
   .features-gradients {
