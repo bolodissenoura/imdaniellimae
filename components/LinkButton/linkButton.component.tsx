@@ -6,21 +6,31 @@ export function LinkButton() {
   return (
     <>
       <Styles.Container>
-        <Styles.Button>
-          <Link href="/">Skills</Link>
-        </Styles.Button>
-        <Styles.Button>
-          <Link href="/">Work XP</Link>
-        </Styles.Button>
-        <Styles.Button>
-          <Link href="/projects">Projects</Link>
-        </Styles.Button>
-        <Styles.Button>
-          <Link href="/">Contact</Link>
-        </Styles.Button>
-        <Styles.Button>
-          <Link href="/">Am I open to work ?</Link>
-        </Styles.Button>
+        <Link href="/" passHref legacyBehavior>
+          <Styles.Button>
+            <a>Skills</a>
+          </Styles.Button>
+        </Link>
+        <Link href="/" passHref legacyBehavior>
+          <Styles.Button>
+            <a>Work XP</a>
+          </Styles.Button>
+        </Link>
+        <Link href="/projects" passHref legacyBehavior>
+          <Styles.Button>
+            <a>Projects</a>
+          </Styles.Button>
+        </Link>
+        <Link href="/" passHref legacyBehavior>
+          <Styles.Button>
+            <a>Contact</a>
+          </Styles.Button>
+        </Link>
+        <Link href="/" passHref legacyBehavior>
+          <Styles.Button>
+            <a>Am I open to work ?</a>
+          </Styles.Button>
+        </Link>
       </Styles.Container>
     </>
   );

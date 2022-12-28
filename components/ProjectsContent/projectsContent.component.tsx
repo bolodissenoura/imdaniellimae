@@ -12,6 +12,7 @@ export function ProjectsContent() {
           <div className="features-gradient tBall"></div>
         </div>
         <Styles.TextContent>
+          <Component.ButtonComeBack />
           <Styles.Title>Projects</Styles.Title>
           <Styles.Subtitle>{">"} 2022</Styles.Subtitle>
         </Styles.TextContent>
