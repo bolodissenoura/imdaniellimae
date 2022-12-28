@@ -5,42 +5,44 @@ export const Container = styled.div`
   display: flex;
   margin: 0px auto;
   width: 800px;
-  height: 100vh;
+  height: 97vh;
+  overflow-y: hidden;
 
   .fBall {
     top: 50%;
     left: 50%;
     background-color: #5800ff;
-    animation: animation-3 10s infinite;
+    animation: animation-3 3s infinite;
   }
 
   .sBall {
-    top: 100;
+    top: 80%;
     left: 70%;
     background-color: #2192ff;
-    animation: animation-3 10s infinite;
+    animation: animation-3 3s infinite;
   }
 
   .tBall {
-    top: 10;
+    top: 10%;
     left: 30%;
     background-color: #e900ff;
-    animation: animation-3 10s infinite;
+    animation: animation-3 3s infinite;
   }
 
   .features-gradients {
+    width: 50%;
+    height: 50%;
     position: absolute;
     background-color: rgba(1, 1, 1, 0.25);
     filter: blur(12em);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    z-index: -1;
   }
   .features-gradient {
     width: 200px;
-    height: 200px;
-    top: 0;
+    height: 400px;
     position: absolute;
+    border-radius: 100%;
+    z-index: -2;
   }
 
   @keyframes animation-1 {
@@ -136,7 +138,7 @@ export const Title = styled.h1`
   font-size: 120px;
 
   @media (min-width: 600px) {
-    font-size: 100px;
+    font-size: 120px;
   }
 `;
 
@@ -144,9 +146,9 @@ export const Subtitle = styled.p`
   color: #f2f2f2;
   padding: 8px;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 34px;
 
-  @media (min-width: 600px) {
+  @media (min-width: 900px) {
     font-size: 16px;
   }
 `;
