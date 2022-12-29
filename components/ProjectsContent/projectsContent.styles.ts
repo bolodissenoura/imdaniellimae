@@ -9,21 +9,21 @@ export const Container = styled.div`
   .fBall {
     top: 50%;
     left: 50%;
-    background-color: #88FFF7;
+    background-color: #88fff7;
     animation: animation-3 8s infinite;
   }
 
   .sBall {
     top: 80%;
     left: 70%;
-    background-color: #94B3FD;
+    background-color: #94b3fd;
     animation: animation-3 8s infinite;
   }
 
   .tBall {
     top: 10%;
     left: 30%;
-    background-color: #FC5404;
+    background-color: #fc5404;
     animation: animation-3 8s infinite;
   }
 
@@ -141,6 +141,18 @@ export const Title = styled.h1`
 `;
 
 export const Subtitle = styled.p`
+  color: #f2f2f2;
+  padding: 8px;
+  font-weight: 500;
+  font-size: 34px;
+
+  text-decoration: none;
+  @media (min-width: 900px) {
+    font-size: 16px;
+  }
+`;
+
+export const Link = styled.p`
   color: #f2f2f2;
   padding: 8px;
   font-weight: 500;
