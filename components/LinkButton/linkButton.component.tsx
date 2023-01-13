@@ -6,7 +6,7 @@ export function LinkButton() {
   return (
     <>
       <Styles.Container>
-        <Link href="/" passHref legacyBehavior>
+        <Link href="/skills" passHref legacyBehavior>
           <Styles.Button>
             <a>Skills</a>
           </Styles.Button>

@@ -1,6 +1,6 @@
 import * as C from "../components";
 
-export default function Projects() {
+export default function Skills() {
   const dataList = [
     { link: "https://vetrin.com.br", title: "Vetrin" },
     {
@@ -46,11 +46,7 @@ export default function Projects() {
 
   return (
     <>
-      <C.ListsContent
-        data={dataList}
-        title="Projects"
-        subtitle="~~~ personal | freelance | study | charity | not all here ( absolutely )"
-      />
+      <C.ListsContent data={dataList} title="Skills" subtitle="----- " />
     </>
   );
 }

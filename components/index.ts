@@ -1,5 +1,5 @@
 export * from "./Title";
 export * from "./HomeContent";
 export * from "./LinkButton";
-export * from "./ProjectsContent";
+export * from "./ListsContent";
 export * from "./ButtonComeBack";
