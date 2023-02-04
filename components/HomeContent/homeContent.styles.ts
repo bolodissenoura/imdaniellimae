@@ -5,7 +5,7 @@ export const Container = styled.div`
   display: flex;
   margin: 0px auto;
   width: 800px;
-  height: 97vh;
+  height: 100%;
   overflow-y: hidden;
 
   .fBall {
@@ -125,6 +125,7 @@ export const TextContent = styled.div`
   max-width: 760px;
   padding: 0px 20px;
   margin: 0 auto;
+  margin-top: 30%;
 `;
 
 export const Title = styled.h1`
