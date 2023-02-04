@@ -2,7 +2,11 @@ import Link from "next/link";
 import React from "react";
 import * as Styles from "./linkButton.styles";
 
-export function LinkButton() {
+interface Props {
+  setFunction: () => void;
+}
+
+export function LinkButton(props: Props) {
   return (
     <>
       <Styles.Container>
@@ -26,11 +30,9 @@ export function LinkButton() {
             <a>Contact</a>
           </Styles.Button>
         </Link>
-        <Link href="/" passHref legacyBehavior>
-          <Styles.Button>
-            <a>Am I open to work ?</a>
-          </Styles.Button>
-        </Link>
+        <Styles.Button onClick={() => props.setFunction()}>
+          <a>Am I open to work ?</a>
+        </Styles.Button>
       </Styles.Container>
     </>
   );
