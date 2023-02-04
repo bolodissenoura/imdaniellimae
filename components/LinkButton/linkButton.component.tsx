@@ -15,9 +15,9 @@ export function LinkButton(props: Props) {
             <a>Skills</a>
           </Styles.Button>
         </Link>
-        <Link href="/" passHref legacyBehavior>
+        <Link href="cvDaniellimae.pdf" download passHref legacyBehavior>
           <Styles.Button>
-            <a>Work XP</a>
+            <a>Work XP | CV</a>
           </Styles.Button>
         </Link>
         <Link href="/projects" passHref legacyBehavior>
@@ -25,7 +25,7 @@ export function LinkButton(props: Props) {
             <a>Projects</a>
           </Styles.Button>
         </Link>
-        <Link href="/" passHref legacyBehavior>
+        <Link href="https://www.linkedin.com/in/daniel-lima-b53090200/" passHref legacyBehavior>
           <Styles.Button>
             <a>Contact</a>
           </Styles.Button>

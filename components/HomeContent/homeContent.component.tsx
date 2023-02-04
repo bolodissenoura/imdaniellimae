@@ -15,7 +15,7 @@ export function HomeContent() {
         <Styles.TextContent>
           <Styles.Title>{title}</Styles.Title>
           <Styles.Subtitle>software developer | front-end | web and mobile | 🦕</Styles.Subtitle>
-          <Component.LinkButton setFunction={() => setTitle('Only part time')} />
+          <Component.LinkButton setFunction={() => setTitle('Only freelance')} />
         </Styles.TextContent>
       </Styles.Container>
     </>
