@@ -119,6 +119,8 @@ export const Container = styled.div`
   }
 `;
 
+export const ContainerCard = styled.div``;
+
 export const TextContent = styled.div`
   max-width: 760px;
   padding: 0px 20px;
@@ -133,7 +135,7 @@ export const Title = styled.h1`
   -moz-background-clip: text;
   -webkit-text-fill-color: transparent;
   padding: 5px;
-  font-size: 120px;
+  font-size: 68px;
 
   @media (min-width: 600px) {
     font-size: 120px;
@@ -144,11 +146,13 @@ export const Subtitle = styled.p`
   color: #f2f2f2;
   padding: 8px;
   font-weight: 500;
-  font-size: 34px;
+  font-size: 18px;
+  max-width: 300px;
 
   text-decoration: none;
   @media (min-width: 900px) {
     font-size: 16px;
+    max-width: 100%;
   }
 `;
 

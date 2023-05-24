@@ -1,14 +1,22 @@
 import React from "react";
 import * as Styles from "./listsContent.styles";
-import * as Component from "../index";
+import * as C from "../index";
+import { useKeenSlider } from "keen-slider/react";
+import { IProjects } from "../../utils/interfaces";
 
 interface ListsContentInterface {
   title: string;
   subtitle: string;
-  data: Array<{ link: string; title: string }>;
+  data: any;
 }
 
 export function ListsContent(props: ListsContentInterface) {
+  const [ref] = useKeenSlider<HTMLDivElement>({
+    slides: {
+      perView: 2,
+      spacing: 2,
+    },
+  });
   return (
     <>
       <Styles.Container>
@@ -18,18 +26,24 @@ export function ListsContent(props: ListsContentInterface) {
           <div className="features-gradient tBall"></div>
         </div>
         <Styles.TextContent>
-          <Component.ButtonComeBack />
+          <C.ButtonComeBack />
           <Styles.Title>{props.title}</Styles.Title>
           <Styles.Subtitle>{props.subtitle}</Styles.Subtitle>
-          {props.data.map((item) => (
-            <>
-              <Styles.Link>
-                <a href={item.link} target="_blank" rel="noreferrer">
-                  {">"} {item.title}
-                </a>
-              </Styles.Link>
-            </>
-          ))}
+          <br />
+          <Styles.ContainerCard ref={ref} className="keen-slider">
+            {props?.data?.map((item: IProjects, index: number) => (
+              <>
+                <C.Card
+                  key={index}
+                  title={item.title}
+                  description={item.description}
+                  imgUrl={item.imgUrl}
+                  link={item.link}
+                />
+              </>
+            ))}
+          </Styles.ContainerCard>
+          <Styles.Title>{"--->"}</Styles.Title>
         </Styles.TextContent>
       </Styles.Container>
     </>
