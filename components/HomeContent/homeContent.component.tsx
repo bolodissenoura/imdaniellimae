@@ -3,7 +3,7 @@ import * as Styles from "./homeContent.styles";
 import * as Component from "../index";
 
 export function HomeContent() {
-  const [title, setTitle] = useState('Daniel limae')
+  const [title, setTitle] = useState("Daniel limae");
   return (
     <>
       <Styles.Container>
@@ -14,8 +14,12 @@ export function HomeContent() {
         </div>
         <Styles.TextContent>
           <Styles.Title>{title}</Styles.Title>
-          <Styles.Subtitle>software developer | front-end | web and mobile | 🦕</Styles.Subtitle>
-          <Component.LinkButton setFunction={() => setTitle('Only freelance')} />
+          <Styles.Subtitle>
+            software developer | front-end | web and mobile | 🦕
+          </Styles.Subtitle>
+          <Component.LinkButton
+            setFunction={() => setTitle("Yep, lets talk")}
+          />
         </Styles.TextContent>
       </Styles.Container>
     </>
