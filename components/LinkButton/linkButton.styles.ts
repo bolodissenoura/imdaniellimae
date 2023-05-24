@@ -36,8 +36,6 @@ export const Button = styled.div`
   cursor: pointer;
   margin: 0 8px;
 
-
-
   a {
     text-decoration: none;
     color: #36395a;
@@ -59,5 +57,4 @@ export const Button = styled.div`
     box-shadow: #d6d6e7 0 3px 7px inset;
     transform: translateY(2px);
   }
-
 `;
