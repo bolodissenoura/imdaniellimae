@@ -135,7 +135,7 @@ export const Title = styled.h1`
   -moz-background-clip: text;
   -webkit-text-fill-color: transparent;
   padding: 5px;
-  font-size: 68px;
+  font-size: 8rem;
 
   @media (min-width: 600px) {
     font-size: 120px;
@@ -146,11 +146,10 @@ export const Subtitle = styled.p`
   color: #f2f2f2;
   padding: 8px;
   font-weight: 500;
-  font-size: 18px;
-  max-width: 300px;
+  font-size: 2rem;
+  max-width: 100%;
 
   @media (min-width: 900px) {
-    font-size: 16px;
-    max-width: 100%;
+    font-size: 1rem;
   }
 `;

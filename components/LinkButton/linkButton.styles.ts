@@ -1,8 +1,13 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  display: flex;
-  margin: 30px auto;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  gap: 1rem;
+  @media (min-width: 900px) {
+    display: flex;
+    margin: 30px auto;
+  }
 `;
 
 export const Button = styled.div`

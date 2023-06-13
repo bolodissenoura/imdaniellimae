@@ -8,15 +8,9 @@ interface Props {
 }
 
 export function LinkButton(props: Props) {
-  const [ref] = useKeenSlider<HTMLDivElement>({
-    slides: {
-      perView: 4,
-      spacing: 2,
-    },
-  });
   return (
     <>
-      <Styles.Container ref={ref} className="keen-slider">
+      <Styles.Container>
         <Link href="/skills" passHref legacyBehavior>
           <Styles.Button className="keen-slider__slide">
             <a>Skills</a>
