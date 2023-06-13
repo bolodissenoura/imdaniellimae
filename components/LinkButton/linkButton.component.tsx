@@ -12,17 +12,22 @@ export function LinkButton(props: Props) {
     <>
       <Styles.Container>
         <Link href="/skills" passHref legacyBehavior>
-          <Styles.Button className="keen-slider__slide">
+          <Styles.Button>
             <a>Skills</a>
           </Styles.Button>
         </Link>
-        <Link href="cvDaniellimae.pdf" download passHref legacyBehavior>
-          <Styles.Button className="keen-slider__slide">
-            <a>Work XP | CV</a>
+        <Styles.Button>
+          <a href="daniellimae.pdf" download>
+            Download CV
+          </a>
+        </Styles.Button>
+        <Link href="/workxp" passHref legacyBehavior>
+          <Styles.Button>
+            <a>Work XP</a>
           </Styles.Button>
         </Link>
         <Link href="/projects" passHref legacyBehavior>
-          <Styles.Button className="keen-slider__slide">
+          <Styles.Button>
             <a>Projects</a>
           </Styles.Button>
         </Link>
@@ -30,13 +35,11 @@ export function LinkButton(props: Props) {
           href="https://www.linkedin.com/in/daniel-limae-b53090200/"
           passHref
           legacyBehavior>
-          <Styles.Button className="keen-slider__slide">
+          <Styles.Button>
             <a>Contact</a>
           </Styles.Button>
         </Link>
-        <Styles.Button
-          className="keen-slider__slide"
-          onClick={() => props.setFunction()}>
+        <Styles.Button onClick={() => props.setFunction()}>
           <a>Am I open to work ?</a>
         </Styles.Button>
       </Styles.Container>
