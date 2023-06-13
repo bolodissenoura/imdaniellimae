@@ -119,7 +119,12 @@ export const Container = styled.div`
   }
 `;
 
-export const ContainerCard = styled.div``;
+export const ContainerCard = styled.div`
+  @media (min-width: 600px) {
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+`;
 
 export const TextContent = styled.div`
   max-width: 760px;
@@ -135,10 +140,10 @@ export const Title = styled.h1`
   -moz-background-clip: text;
   -webkit-text-fill-color: transparent;
   padding: 5px;
-  font-size: 68px;
+  font-size: 10rem;
 
   @media (min-width: 600px) {
-    font-size: 120px;
+    font-size: 8rem;
   }
 `;
 
@@ -146,13 +151,12 @@ export const Subtitle = styled.p`
   color: #f2f2f2;
   padding: 8px;
   font-weight: 500;
-  font-size: 18px;
-  max-width: 300px;
+  font-size: 2rem;
+  max-width: 100%;
 
   text-decoration: none;
   @media (min-width: 900px) {
-    font-size: 16px;
-    max-width: 100%;
+    font-size: 1rem;
   }
 `;
 

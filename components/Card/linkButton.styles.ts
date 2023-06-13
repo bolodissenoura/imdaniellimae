@@ -1,8 +1,9 @@
 import styled, { keyframes } from "styled-components";
 
 export const Container = styled.div`
-  height: 400px;
-  width: 200px;
+  height: 200px;
+  width: 90%;
+  margin-bottom: 0.5rem;
   background: rgba(255, 255, 255, 0.2);
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -34,6 +35,10 @@ export const LittleCuteBall = styled.div`
 
 export const Title = styled.p`
   padding-left: 8px;
+  font-size: 2rem;
+  @media (min-width: 600px) {
+    font-size: 1.5rem;
+  }
 `;
 
 export const ImageContainer = styled.div`

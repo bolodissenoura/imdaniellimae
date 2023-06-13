@@ -13,7 +13,7 @@ interface Props {
 export function Card(props: Props) {
   return (
     <>
-      <Styles.Container className="keen-slider__slide">
+      <Styles.Container>
         <Styles.Header>
           <Styles.LittleCuteBall color="#EF4444" />
           <Styles.LittleCuteBall color="#EAB308" />
@@ -21,13 +21,6 @@ export function Card(props: Props) {
         </Styles.Header>
         <Styles.Title>{props.title}</Styles.Title>
         <Styles.Title>{props.description}</Styles.Title>
-        <Image
-          src={props.imgUrl}
-          alt={""}
-          width={300}
-          height={230}
-          style={{ borderRadius: 8, margin: "0 auto" }}
-        />
       </Styles.Container>
     </>
   );

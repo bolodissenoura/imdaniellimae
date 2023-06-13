@@ -1,7 +1,6 @@
 import React from "react";
 import * as Styles from "./listsContent.styles";
 import * as C from "../index";
-import { useKeenSlider } from "keen-slider/react";
 import { IProjects } from "../../utils/interfaces";
 
 interface ListsContentInterface {
@@ -11,12 +10,6 @@ interface ListsContentInterface {
 }
 
 export function ListsContent(props: ListsContentInterface) {
-  const [ref] = useKeenSlider<HTMLDivElement>({
-    slides: {
-      perView: 2,
-      spacing: 2,
-    },
-  });
   return (
     <>
       <Styles.Container>
@@ -30,7 +23,7 @@ export function ListsContent(props: ListsContentInterface) {
           <Styles.Title>{props.title}</Styles.Title>
           <Styles.Subtitle>{props.subtitle}</Styles.Subtitle>
           <br />
-          <Styles.ContainerCard ref={ref} className="keen-slider">
+          <Styles.ContainerCard>
             {props?.data?.map((item: IProjects, index: number) => (
               <>
                 <C.Card
