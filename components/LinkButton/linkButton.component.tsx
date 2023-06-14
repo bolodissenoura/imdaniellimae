@@ -21,7 +21,7 @@ export function LinkButton(props: Props) {
             Download CV
           </a>
         </Styles.Button>
-        <Link href="/workxp" passHref legacyBehavior>
+        <Link href="/work-xp" passHref legacyBehavior>
           <Styles.Button>
             <a>Work XP</a>
           </Styles.Button>

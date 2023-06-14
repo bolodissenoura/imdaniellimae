@@ -36,7 +36,6 @@ export function ListsContent(props: ListsContentInterface) {
               </>
             ))}
           </Styles.ContainerCard>
-          <Styles.Title>{"--->"}</Styles.Title>
         </Styles.TextContent>
       </Styles.Container>
     </>

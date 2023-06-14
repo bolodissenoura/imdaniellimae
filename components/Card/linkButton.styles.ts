@@ -1,9 +1,9 @@
 import styled, { keyframes } from "styled-components";
 
 export const Container = styled.div`
-  height: 200px;
-  width: 90%;
-  margin-bottom: 0.5rem;
+  height: 300px;
+  width: 96%;
+  margin-bottom: 1rem;
   background: rgba(255, 255, 255, 0.2);
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -13,6 +13,11 @@ export const Container = styled.div`
   border: 1px solid #f5f5f5;
   border-radius: 8px;
   padding: 8px;
+`;
+
+export const Body = styled.div`
+  height: 200px;
+  overflow-y: scroll;
 `;
 
 export const Header = styled.div`
@@ -35,7 +40,16 @@ export const LittleCuteBall = styled.div`
 
 export const Title = styled.p`
   padding-left: 8px;
-  font-size: 2rem;
+  font-size: 3rem;
+  @media (min-width: 600px) {
+    font-size: 1.5rem;
+  }
+`;
+
+export const SubTitle = styled.p`
+  padding-left: 8px;
+  font-size: 1.8rem;
+  color: #e5e5e5;
   @media (min-width: 600px) {
     font-size: 1.5rem;
   }

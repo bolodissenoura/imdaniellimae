@@ -20,7 +20,10 @@ export function Card(props: Props) {
           <Styles.LittleCuteBall color="#18A34A" />
         </Styles.Header>
         <Styles.Title>{props.title}</Styles.Title>
-        <Styles.Title>{props.description}</Styles.Title>
+        <br />
+        <Styles.Body>
+          <Styles.SubTitle>{props.description}</Styles.SubTitle>
+        </Styles.Body>
       </Styles.Container>
     </>
   );
